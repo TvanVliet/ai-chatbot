@@ -1,0 +1,30 @@
+{
+  "name": "aichatbot",
+  "version": "1.0.0",
+  "description": "practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TvanVliet/ai-chatbot.git"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "practice",
+    "project"
+  ],
+  "author": "Tim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TvanVliet/ai-chatbot/issues"
+  },
+  "homepage": "https://github.com/TvanVliet/ai-chatbot#readme",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
