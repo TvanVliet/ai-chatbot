@@ -1,5 +1,5 @@
 // Fill in your API.AI/Dialogflow keys
-const APIAI_TOKEN = 'XXXXXXXX';
+const APIAI_TOKEN = 'XXXXXXXXXXX';
 const APIAI_SESSION_ID = 'XXXXXXXXX';
 
 // instantiating Express and the server
@@ -26,12 +26,12 @@ app.get('/', (req, res) => {
 	res.sendFile('index.html');
 });
 
+// log what is being said by socket.io
 io.on('connection', function(socket) {
   socket.on('chat message', (text) => {
     console.log('You just said: ' + text);
 
     // Get a reply from API.ai
-
     let apiaiReq = apiai.textRequest(text, {
       sessionId: APIAI_SESSION_ID
     });

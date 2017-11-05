@@ -25,6 +25,7 @@ recognition.addEventListener('result', (e) => {
 	socket.emit('chat message', text);
 });
 
+// make the bot speak
 function synthVoice(text) {
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance();
